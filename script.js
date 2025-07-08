@@ -6,7 +6,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
 });
 
 function fetchCoordinates(city) {
-    const apiKey = 'f14b761ac942d152a62afcc8dc4b49c8'; 
+    const apiKey = ''; 
     const geocodeUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}`;
 
     fetch(geocodeUrl)
@@ -26,7 +26,7 @@ function fetchCoordinates(city) {
         });
 }
 function fetchWeatherData(lat, lon) {
-    const apiKey = 'f14b761ac942d152a62afcc8dc4b49c8'; 
+    const apiKey = ''; 
     const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=current,hourly&appid=${apiKey}`;
 
     fetch(apiUrl)
